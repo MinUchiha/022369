@@ -1,0 +1,99 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Encabezado */
+header {
+    background: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Botón modo oscuro */
+#darkModeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: #1e3d59;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+#darkModeToggle:hover {
+    background: #ddd;
+}
+
+/* Imagen */
+.foto {
+    text-align: center;
+    margin: 20px;
+}
+
+.foto img {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid #1e3d59;
+}
+
+/* Autobiografía */
+.autobiografia {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+.autobiografia h3 {
+    text-align: center;
+    color: #1e3d59;
+}
+
+/* Footer */
+footer {
+    background: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* 🌙 Estilos para modo oscuro */
+body.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode .autobiografia {
+    background: #1e1e1e;
+    color: #ddd;
+}
+
+body.dark-mode header {
+    background: #0d253f;
+}
+
+body.dark-mode footer {
+    background: #0d253f;
+}
+
+body.dark-mode #darkModeToggle {
+    background: #333;
+    color: white;
+}
